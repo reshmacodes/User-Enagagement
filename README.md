@@ -3,13 +3,20 @@ User Engagement Activity Analysis
 
 The Company: 
 Zen is a business-to-business professional services company that provides online services and products to support work of the employees of its customer companies. Many companies in diverse areas of business including, for example, manufacturers, producers, suppliers, retailers, transportation, and others are Zen’s paid subscribers. Besides an annual subscription fee, variable charges are based on the extent of engagement with its products and services by the users (users are employees of customer companies).
+
 Zen has a Data Analytics (DA) department, whose primary responsibility is to track user engagement and support better product and business decisions using data. The DA teams conduct studies, carry out projects to address specific business problems, and perform ad-hoc analyses to support business decisions. You are one of the business analysts in the DA department.
+
 Zen defines user activity as an engagement with its online portal, i.e., the customers (users) having made some type of server call by interacting with the company’s website/web server. Such events are listed as “engagement” in the event_type column of the EVENTS table.
+
+
 Task at Hand:
 Your job is to monitor user activity and engagement on a regular basis and report to the senior management, whether engagement is stable, dropping, or increasing. For any changes in user engagement activity, you also need to investigate possible sources or reasons for the changes. 
+
+
 Data:
 Data is provided in three csv files, which you’ll need to upload to your Databricks account and create permanent tables so you can use SQL with those tables. The structure of the three csv files is described below.
-USERS
+
+#USERS
 user_id:	A unique ID per user. Can be joined to user_id in either of the other tables.
 created_at:	The time the user was created (first signed up)
 state:	The state of the user (active or pending)
@@ -18,7 +25,7 @@ company_id:	The ID of the user's company
 language:	The chosen language of the user
 
 
-EVENTS
+#EVENTS
 user_id:	The ID of the user logging the event. Can be joined to user_id in either of the other tables.
 occurred_at:	The time the event occurred.
 event_type:	The general event type. There are two values in this dataset:
@@ -40,7 +47,7 @@ view_inbox: User views messages in her inbox
 location:	The country from which the event was logged (collected through IP address).
 device:	The type of device used to log the event.
 
-EMAILS
+#EMAILS
 user_id:	The ID of the user to whom the event relates. Can be joined to user_id in either of the other tables.
 occurred_at:	The time the event occurred.
 action:	The name of the event that occurred.
