@@ -55,3 +55,6 @@ sent_weekly_digest: it means that the user was delivered a digest email showing 
 email_open: it means that the user opened the email.
 email_click-through: it means that the user clicked a link in the email.
 
+
+[User Engagement_readme.docx](https://github.com/reshmacodes/User-Enagagement/files/6087660/User.Engagement_readme.docx)
+
